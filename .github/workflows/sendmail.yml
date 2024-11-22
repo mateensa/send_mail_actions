@@ -17,9 +17,8 @@
           sudo mkdir -p ~/.mutt/cache/headers
           sudo mkdir ~/.mutt/cache/bodies
           sudo touch ~/.mutt/certificates
-          which mutt
-          # sudo /bin/sh -c 'echo "127.0.0.1    localhost gmail.com" >> /etc/hosts'
-          # echo "actions test mail" | sendmail -s "actions test mail" samateen.sb@gmail.com
+          
+          mutt -s "Test Email" samateen.sb@gmail.com
 
 
 
