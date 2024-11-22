@@ -14,8 +14,8 @@
          run: |
            sudo apt-get install sendemail -q -y
            which sendmail
-           sudo /bin/sh -c 'echo "127.0.0.1    localhost gmail.com" >> /etc/hosts'
-           echo "actions test mail" | sendmail -s "actions test mail" samateen.sb@gmail.com
+           # sudo /bin/sh -c 'echo "127.0.0.1    localhost gmail.com" >> /etc/hosts'
+           # echo "actions test mail" | sendmail -s "actions test mail" samateen.sb@gmail.com
 
 
 
