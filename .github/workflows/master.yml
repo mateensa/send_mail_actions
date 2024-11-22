@@ -8,8 +8,7 @@ jobs:
   masterwrapper: 
     name: test
     runs-on: ubuntu-latest
-    
-  useCallable:
-    uses: ./.github/workflows/rae.yml
-    with:
-      name: 'Mateen'
+    steps:
+      - name: init
+        run: echo "init"
+  
