@@ -12,6 +12,12 @@ on:
         value: ${{ steps.greeting.outputs.message }}
 
 jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+    - id: greeting
+      run: echo "::set-output name=message::Hello, ${{ inputs.name }}"
+
   deploy:
     name: AE Runner
     runs-on: ubuntu-latest
