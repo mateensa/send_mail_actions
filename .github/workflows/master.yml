@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch: 
+  push:
+    branches:
+    - main
+name: Masterwrapper
+jobs:
+  useCallable:
+    uses: ./.github/workflows/rae.yml
+    with:
+      name: 'Mateen'
+
+    
