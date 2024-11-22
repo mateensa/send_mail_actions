@@ -11,10 +11,9 @@ jobs:
     steps:
       - name: init
         run: echo "init"
-  
-  useCallable:
-    uses: |
-      ./.github/workflows/rae.yml
-      ./.github/workflows/rde.yml
+  AE:
+    uses: ./.github/workflows/rae.yml
+  DE:
+    uses: ./.github/workflows/rde.yml
       
 
