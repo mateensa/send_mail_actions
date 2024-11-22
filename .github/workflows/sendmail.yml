@@ -10,11 +10,9 @@
    send_mail: 
      runs-on: ubuntu-latest
      steps:
-       - name: "Install sendmail"
+       - name: Install sendmail and send the mail
          run: |
            sudo apt-get install sendemail -q -y
-       - name: MailSend
-         run: |
            which sendmail
            sudo /bin/sh -c 'echo "127.0.0.1    localhost gmail.com" >> /etc/hosts'
            echo "actions test mail" | sendmail -s "actions test mail" samateen.sb@gmail.com
