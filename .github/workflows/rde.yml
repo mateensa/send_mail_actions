@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch: 
+  push:
+    branches:
+      - main
+name: Run DE
+jobs:
+  deploy:
+    name: DE Runner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: |
+          echo "Insdie DE"
