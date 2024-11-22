@@ -14,11 +14,12 @@
      steps:
        - name: Install sendmail and send the mail
          run: |
-          dpkg --add-architecture i386
-          apt-get update -y
-          apt-get install -y build-essential gcc-multilib g++-multilib libsdl2-dev:i386 libsdl2-mixer-dev:i386 libsdl2-net-dev:i386 libfreetype-dev:i386 ninja-build:i386
-          apt-get install sendemail -q -y
-          which sendmail
+          sudo apt-get update -q -y
+          sudo apt-get install mutt -q -y
+          sudo mkdir -p ~/.mutt/cache/headers
+          sudo mkdir ~/.mutt/cache/bodies
+          sudo touch ~/.mutt/certificates
+          which mutt
           # sudo /bin/sh -c 'echo "127.0.0.1    localhost gmail.com" >> /etc/hosts'
           # echo "actions test mail" | sendmail -s "actions test mail" samateen.sb@gmail.com
 
