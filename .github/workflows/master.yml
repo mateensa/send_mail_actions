@@ -5,6 +5,10 @@ on:
     - main
 name: Masterwrapper
 jobs:
+  masterwrapper: 
+    name: test
+    runs-on: ubuntu-latest
+    
   useCallable:
     uses: ./.github/workflows/rae.yml
     with:
