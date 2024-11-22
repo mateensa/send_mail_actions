@@ -2,7 +2,7 @@ name: Run AE
 on: 
   workflow_call:
 jobs:
-  deploy:
+  ae:
     name: AE Runner
     runs-on: ubuntu-latest
     steps:
