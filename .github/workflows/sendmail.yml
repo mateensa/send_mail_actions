@@ -15,7 +15,7 @@
            sudo apt-get install sendemail -q -y
        - name: MailSend
          run: |
-           echo "127.0.0.1    localhost yourhostname" >> /etc/hosts
+           sudo /bin/sh -c 'echo "127.0.0.1    localhost gmail.com" >> /etc/hosts'
            echo "actions test mail" | sendmail -s "actions test mail" samateen.sb@gmail.com
 
 
