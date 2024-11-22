@@ -14,7 +14,5 @@ jobs:
   
   useCallable:
     uses: ./.github/workflows/rae.yml
-    with:
-      name: 'Mateen'
       
 
