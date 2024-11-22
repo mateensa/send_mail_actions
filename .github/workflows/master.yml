@@ -3,16 +3,18 @@ on:
   push:
     branches:
     - main
-name: Masterwrapper
+name: Master wrapper Workflow
 jobs:
   masterwrapper: 
-    name: test
+    name: Master Wrapper
     runs-on: ubuntu-latest
     steps:
       - name: init
         run: echo "init"
   
   useCallable:
-    uses: ./.github/workflows/rae.yml
+    uses: |
+      ./.github/workflows/rae.yml
+      ./.github/workflows/rde.yml
       
 
