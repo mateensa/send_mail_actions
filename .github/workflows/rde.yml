@@ -1,8 +1,8 @@
+name: Run DE
 on:
   workflow_call: 
-name: Run DE
 jobs:
-  deploy:
+  de:
     name: DE Runner
     runs-on: ubuntu-latest
     steps:
