@@ -12,6 +12,7 @@
      steps:
        - name: Install sendmail and send the mail
          run: |
+           sudo apt-get update
            sudo apt-get install sendemail -q -y
            which sendmail
            # sudo /bin/sh -c 'echo "127.0.0.1    localhost gmail.com" >> /etc/hosts'
