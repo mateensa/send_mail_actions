@@ -1,0 +1,21 @@
+ on:
+     workflow_dispatch: 
+     push:
+       branches:
+         - main
+ 
+ name: Send mail notification
+
+ jobs:
+   send_mail: 
+     runs-on: ubuntu-latest
+     steps:
+       - name: "Install sendmail"
+         run: |
+           apt-get install sendemail -q -y
+       - name: MailSend
+         run: |
+           echo "actions test mail" | mail -s "actions test mail" samateen.sb@gmail.com
+
+
+
