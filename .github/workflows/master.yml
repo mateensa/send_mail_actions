@@ -12,3 +12,7 @@ jobs:
       - name: init
         run: echo "init"
   
+  useCallable:
+    uses: ./.github/workflows/rae.yml
+    with:
+      name: 'Mateen'
