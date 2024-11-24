@@ -12,7 +12,7 @@ jobs:
       - name: init
         run: |
           echo "init"
-          echo ${{ toJson(github) }}
+          echo "${{ toJson(github) }}"
   AE:
     uses: ./.github/workflows/rae.yml
   DE:
