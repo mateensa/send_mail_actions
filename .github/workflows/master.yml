@@ -8,13 +8,11 @@ jobs:
   masterwrapper: 
     name: Master Wrapper
     runs-on: ubuntu-latest
-    env:
-      GITHUB_CTX_VAL: ${{ toJson(github) }}
     steps:
       - name: init
         run: |
           echo "init"
-          echo "$GITHUB_CTX_VAL"
+          echo "${{ toJson(github) }}"
   AE:
     uses: ./.github/workflows/rae.yml
   DE:
