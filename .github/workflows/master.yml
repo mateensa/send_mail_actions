@@ -12,8 +12,7 @@ jobs:
       - name: init
         run: |
           echo "init"
-          echo "${github}"
-          echo "${GITHUB}"
+          echo ${{ github }}
   AE:
     uses: ./.github/workflows/rae.yml
   DE:
