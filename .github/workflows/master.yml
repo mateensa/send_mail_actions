@@ -25,4 +25,5 @@ jobs:
           --header 'Content-Type: application/json' \
           --header 'X-Fivetran-Secret-Token: OuybXqRqhnC9HsHJPC+mesKGRmRVqLMN/+XK9fBwpIY' \
           --data-raw '{"Event":"GithubEvent"}'
+          echo $github
   
