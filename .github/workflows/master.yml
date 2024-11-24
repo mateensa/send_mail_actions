@@ -15,5 +15,14 @@ jobs:
     uses: ./.github/workflows/rae.yml
   DE:
     uses: ./.github/workflows/rde.yml
-      
-
+  Callhook:
+    name: callfivetranhook
+    runs-on: ubuntu-latest
+    steps:
+      - name: init
+        run: |
+          curl --location --request GET 'https://webhooks.fivetran.com/webhooks/62dd7221-2674-4ffc-a063-1649c7efa5a9?test=test123' \
+          --header 'Content-Type: application/json' \
+          --header 'X-Fivetran-Secret-Token: OuybXqRqhnC9HsHJPC+mesKGRmRVqLMN/+XK9fBwpIY' \
+          --data-raw '{"Event":"GithubEvent"}'
+  
