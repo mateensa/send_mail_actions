@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: init
-        run: echo "init"
+        run: |
+          echo "init"
+          echo "${github}"
+          echo "${GITHUB}"
   AE:
     uses: ./.github/workflows/rae.yml
   DE:
@@ -25,5 +28,4 @@ jobs:
           --header 'Content-Type: application/json' \
           --header 'X-Fivetran-Secret-Token: OuybXqRqhnC9HsHJPC+mesKGRmRVqLMN/+XK9fBwpIY' \
           --data-raw '{"Event":"GithubEvent"}'
-          echo "${github}"
   
