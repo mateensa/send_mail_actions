@@ -25,6 +25,6 @@ jobs:
         run: |
           curl --location 'https://webhooks.fivetran.com/webhooks/62dd7221-2674-4ffc-a063-1649c7efa5a9' \
           --header 'X-Fivetran-Secret-Token: OuybXqRqhnC9HsHJPC+mesKGRmRVqLMN/+XK9fBwpIY' \
-          --header 'Content-Type: application/json'
+          --header 'Content-Type: application/json' \
           --data-raw "${{ toJson(github) }}"
   
