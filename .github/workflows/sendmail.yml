@@ -2,7 +2,7 @@
      workflow_dispatch: 
      push:
       branches:
-       main
+       # main
  
  name: Send mail notification
 
