@@ -13,4 +13,9 @@ jobs:
         run: |
           echo "Insdie AE ${testToken} " > test.txt
           cat test.txt
+          if [ "$testToken" == "TEST_1TOKEN" ];then
+          echo "Incorrect"
+          else
+          echo "Correct"
+          fi;
           
