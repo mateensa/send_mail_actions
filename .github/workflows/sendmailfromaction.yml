@@ -1,0 +1,20 @@
+on:
+  workflow_dispatch:
+name: marketplace_sendmail
+jobs:
+   send_mail: 
+     runs-on: ubuntu-latest
+     steps:
+       - name: Send mail step
+         uses: devellany/send-mail@v1.0.2
+         with:
+           host: smtp.gmail.com
+           port: 465
+           sender: samateen.sb@gmail.com
+           from: samateen.sb@gmail.com
+           to: samateen.sb@gmail.com
+           subject: Test
+           body: Test
+           contentType: text/plain
+
+ 
