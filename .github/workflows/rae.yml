@@ -11,4 +11,6 @@ jobs:
     steps:
       - name: Echo
         run: |
-          echo "Insdie AE ${testToken} "
+          echo "Insdie AE ${testToken} " > test.txt
+          cat test.txt
+          
