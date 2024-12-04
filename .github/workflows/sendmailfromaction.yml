@@ -1,4 +1,7 @@
 on:
+  push:
+      branches:
+       main
   workflow_dispatch:
 name: marketplace_sendmail
 jobs:
@@ -10,6 +13,7 @@ jobs:
          with:
            host: smtp.gmail.com
            port: 465
+           account: samateen.sb
            sender: samateen.sb@gmail.com
            from: samateen.sb@gmail.com
            to: samateen.sb@gmail.com
