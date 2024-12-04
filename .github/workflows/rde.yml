@@ -1,6 +1,7 @@
 name: Run DE
 on:
-  workflow_call: 
+  workflow_call:
+  workflow_dispatch:
 jobs:
   de:
     name: DE Runner
