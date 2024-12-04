@@ -5,8 +5,10 @@ on:
 jobs:
   ae:
     name: AE Runner
+    env:
+      testToken: ${{ secrets.TEST_TOKEN }}
     runs-on: ubuntu-latest
     steps:
       - name: Echo
         run: |
-          echo "Insdie AE"
+          echo "Insdie AE ${testToken} "
