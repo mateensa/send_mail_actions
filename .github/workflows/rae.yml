@@ -1,6 +1,7 @@
 name: Run AE
 on: 
   workflow_call:
+  workflow_dispatch:
 jobs:
   ae:
     name: AE Runner
